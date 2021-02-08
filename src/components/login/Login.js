@@ -46,7 +46,7 @@ function Login() {
               <div className="sign-up">
                 <p id="sign-up-option">
                   Don't have an account?
-                  <a id="sign-up-option-2" href="link"> Sign up</a>
+                  <a id="sign-up-option-2" href="link">Sign up</a>
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@ function Login() {
         <footer className="footer" id="container">
           <div className="footer-list">
             <nav className="footer-nav">
-              <ul className="footer-ul">
+              {/* <ul className="footer-ul">
                 <li className="li-kzy1">ABOUT</li>
                 <li className="li-kzy1">HELP</li>
                 <li className="li-kzy1">PRESS</li>
@@ -67,7 +67,7 @@ function Login() {
                 <li className="li-kzy1">TERMS</li>
                 <li className="li-kzy2 locations">LOCATIONS</li>
             
-              </ul>
+              </ul> */}
             </nav>
             <span className="authors">© 2021 My Task Bar from Maja, Łukasz, Radek & Aga</span>
            <span className="freepik"> <a href="http://www.freepik.com" className="freepik">Background photo designed by rawpixel.com / Freepik</a></span>
