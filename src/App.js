@@ -1,7 +1,15 @@
+import React from 'react'
+
+import Login from "./components/login/Login"
+
 function App() {
-  return 'start';
+
+return  (
+    <>
+    <Login />
+    </>
+)
+
 }
-console.log('start');
 
-
-export default App;
+export default App
