@@ -7,13 +7,13 @@
 
 body {
     background-color: #80604C;
+    font-family: "Lato", sans-serif;
 }
 
 .logo {
-    
     padding: 10px;
-    padding-left: 30px;
-
+    padding-left: 50px;
+    font-family: "Lobster";
 }
 
 .navigation {
