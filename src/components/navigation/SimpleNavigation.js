@@ -1,5 +1,5 @@
-import "./SimpleNavigation.css";
-import "../shared.css";
+import './SimpleNavigation.css';
+import '../shared.css';
 
 export const SimpleNavigation = () => {
   return (
@@ -13,9 +13,11 @@ export const SimpleNavigation = () => {
       </nav>
       <div className="welcome">
         <h2 className="title">Witaj na stronie My Task Bar! </h2>
-        <p>Pomożemy Ci w w organizacji codziennej pracy. Wyznacz swoje cele, podziel pracę na zadania, poczuj satysfakcję z ukończonych zadań.</p>
+        <p>
+          Pomożemy Ci w w organizacji codziennej pracy. Wyznacz swoje cele,
+          podziel pracę na zadania, poczuj satysfakcję z ukończonych zadań.
+        </p>
       </div>
-
     </>
   );
 };
