@@ -1,6 +1,6 @@
-import './Login.css';
+import '../service/login.css';
 
-function Login() {
+export const Login = () => {
   return (
     <main>
       <article className="main-container box">
@@ -63,6 +63,6 @@ function Login() {
       </article>
     </main>
   );
-}
+};
 
 export default Login;
