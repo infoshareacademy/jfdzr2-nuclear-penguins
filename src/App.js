@@ -1,16 +1,19 @@
-import React from 'react'
-// import Login from "./components/login/Login"
-// import { SimpleNavigation } from './components/navigation/SimpleNavigation';
-import { Bar } from './components/bar/Bar';
+import React from "react";
+import { Login } from "./components/login/Login";
+
+import { HomePage } from "./components/navigation/HomePage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-   
-    // <SimpleNavigation />
-    <Bar />
-    // <Login />
+    <Router>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Login} />
+      </Switch>
+    </Router>
   );
 }
-console.log('start');
 
-export default App
+export default App;
