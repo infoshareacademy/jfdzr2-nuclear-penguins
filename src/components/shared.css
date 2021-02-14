@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:  #331E16; 
+}
+
+body {
+    background-color: #80604C;
+}
+
+.logo {
+    
+    padding: 10px;
+    padding-left: 30px;
+
+}
+
+.navigation {
+    background-color: #F7D6AB;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+li {
+    display: block;
+    padding: 10px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
