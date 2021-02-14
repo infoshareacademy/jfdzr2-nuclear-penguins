@@ -1,0 +1,19 @@
+.welcome {
+  width: 600px;
+  height: auto;
+  background-color: #f7d6ab;
+  text-align: center;
+  margin: 50px auto;
+  padding: 40px 50px;
+}
+
+.title {
+  padding: 10px;
+}
+
+ul {
+  margin: 10px;
+}
+.link-nav {
+  margin: 0 15px;
+}
