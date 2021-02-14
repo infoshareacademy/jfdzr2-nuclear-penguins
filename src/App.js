@@ -16,5 +16,6 @@ function App() {
     </Router>
   );
 }
+console.log('start');
 
 export default App;
