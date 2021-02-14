@@ -3,14 +3,14 @@
 }
 
 html {
-  background: url("/src/assets/backgroundScreen.png") no-repeat;
+  background: url('/src/assets/backgroundScreen.png') no-repeat;
   background-color: rgba(243, 237, 234, 255);
   background-size: 100vw 46vw;
 }
 
 .main-container {
   display: flex;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: black;
   font-size: 1vw;
 }
@@ -25,7 +25,7 @@ div.app-name-mobile {
 }
 
 div.app-name {
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   font-size: 2.3vw;
   text-align: center;
   transform: rotate(-3deg);
@@ -117,7 +117,7 @@ span.authors {
   padding-top: 9px;
   text-align: right;
   font-size: 1vw;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: grey;
   /* display: none; */
 }
@@ -128,7 +128,7 @@ span.authors {
   text-align: center;
   text-decoration: none;
   font-size: 1 vw;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: grey;
   display: none;
 }
@@ -143,7 +143,7 @@ span.authors {
 
 @media (min-width: 320px) and (max-width: 480px) {
   html {
-    background: url("/src/assets/backgroundMobile.jpg") no-repeat center center
+    background: url('/src/assets/backgroundMobile.jpg') no-repeat center center
       fixed;
     background-size: 100% 100%;
   }
@@ -157,7 +157,7 @@ span.authors {
   div.app-name-mobile {
     display: flex;
     justify-content: center;
-    font-family: "Lobster", cursive;
+    font-family: 'Lobster', cursive;
     font-size: 26px;
     padding-top: 3%;
   }
@@ -197,7 +197,7 @@ span.authors {
 
 @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
   html {
-    background: url("/src/assets/backgroundMobile.jpg") no-repeat center center
+    background: url('/src/assets/backgroundMobile.jpg') no-repeat center center
       fixed;
     background-size: 100% 102%;
   }
@@ -210,7 +210,7 @@ span.authors {
   }
   div.app-name-mobile {
     display: flex;
-    font-family: "Lobster", cursive;
+    font-family: 'Lobster', cursive;
     justify-content: center;
     text-align: center;
     font-size: 30px;
@@ -255,7 +255,8 @@ span.authors {
 
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
   html {
-    background: url("/src/assets/backgroundMobile.jpg") no-repeat center center fixed;
+    background: url('/src/assets/backgroundMobile.jpg') no-repeat center center
+      fixed;
     background-size: 100% 100%;
   }
   .box {
@@ -267,7 +268,7 @@ span.authors {
   }
   div.app-name-mobile {
     display: flex;
-    font-family: "Lobster", cursive;
+    font-family: 'Lobster', cursive;
     justify-content: center;
     text-align: center;
     font-size: 45px;

@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 // import Login from "./components/login/Login"
 // import { SimpleNavigation } from './components/navigation/SimpleNavigation';
-import { Bar } from './components/bar/Bar';
+import {Bar} from './components/bar/Bar';
 
 function App() {
   return (
-   
     // <SimpleNavigation />
     <Bar />
     // <Login />
@@ -13,4 +12,4 @@ function App() {
 }
 console.log('start');
 
-export default App
+export default App;

@@ -1,4 +1,4 @@
-import "./Login.css";
+import './Login.css';
 
 function Login() {
   return (
@@ -39,7 +39,7 @@ function Login() {
                 <p id="sign-up-option">
                   Don't have an account?
                   <a id="sign-up-option-2" href="link">
-                    {" "}
+                    {' '}
                     Sign up
                   </a>
                 </p>
@@ -53,7 +53,7 @@ function Login() {
               © 2021 My Task Bar from Maja, Łukasz, Radek & Aga
             </span>
             <span className="freepik">
-              {" "}
+              {' '}
               <a href="http://www.freepik.com" className="freepik">
                 Background photo designed by rawpixel.com / Freepik
               </a>
