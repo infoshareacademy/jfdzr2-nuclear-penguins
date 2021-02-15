@@ -1,6 +1,31 @@
 import '../service/login.css';
+import {NavLink, Redirect, withRouter} from 'react-router-dom';
+import React, {useCallback, useContext} from 'react';
+import app from './Firebase';
+import {AuthContext} from './Auth';
 
-export const Login = () => {
+export const Login = ({history}) => {
+  const handleLogin = useCallback(
+    async (event) => {
+      event.preventDefault();
+      const {email, password} = event.target.elements;
+      try {
+        await app
+          .auth()
+          .signInWithEmailAndPassword(email.value, password.value);
+        history.push('/bartable');
+      } catch (error) {
+        alert(error);
+      }
+    },
+    [history]
+  );
+  const currentUser = useContext(AuthContext);
+
+  if (currentUser) {
+    return <Redirect to="/bartable" />;
+  }
+
   return (
     <main>
       <article className="main-container box">
@@ -8,7 +33,7 @@ export const Login = () => {
         <div className="app-name">My Task Bar</div>
         <div className="log-in-form">
           <div className="login-panel">
-            <form action="#">
+            <form onSubmit={handleLogin} action="#">
               <p>
                 <label htmlFor="email"></label>
                 <input
@@ -38,10 +63,7 @@ export const Login = () => {
               <div className="sign-up">
                 <p id="sign-up-option">
                   Don't have an account?
-                  <a id="sign-up-option-2" href="link">
-                    {' '}
-                    Sign up
-                  </a>
+                  <NavLink to={'/signup'}>Sign up</NavLink>
                 </p>
               </div>
             </div>
@@ -65,4 +87,4 @@ export const Login = () => {
   );
 };
 
-export default Login;
+export default withRouter(Login);
