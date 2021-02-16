@@ -3,6 +3,7 @@ import {NavLink, Redirect, withRouter} from 'react-router-dom';
 import React, {useCallback, useContext} from 'react';
 import app from './Firebase';
 import {AuthContext} from './Auth';
+import iconEmail from '../../assets/iconEmail.png';
 
 export const Login = ({history}) => {
   const handleLogin = useCallback(
@@ -71,9 +72,11 @@ export const Login = ({history}) => {
         </div>
         <footer className="footer" id="container">
           <div className="footer-list">
-            <span className="authors">
-              © 2021 My Task Bar from Maja, Łukasz, Radek & Aga
+            <span className="contact">
+              <img src={iconEmail} alt="envelope icon" className="envelope" />
+              Maja.Radek.Lukasz.Aga@gmail.com
             </span>
+            <span className="authors">© 2021 My Task Bar</span>
             <span className="freepik">
               {' '}
               <a href="http://www.freepik.com" className="freepik">

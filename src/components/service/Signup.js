@@ -2,6 +2,7 @@ import './login.css';
 import {NavLink, withRouter} from 'react-router-dom';
 import React, {useCallback} from 'react';
 import app from './Firebase';
+import iconEmail from '../../assets/iconEmail.png';
 
 function Signup({history}) {
   const handleSignUp = useCallback(
@@ -57,7 +58,7 @@ function Signup({history}) {
               <div className="sign-up">
                 <p id="sign-up-option">
                   Already have an account?
-                  <NavLink to={'/login'}>Log in</NavLink>
+                  <NavLink to={'/login'}> Log in</NavLink>
                 </p>
               </div>
             </div>
@@ -65,9 +66,11 @@ function Signup({history}) {
         </div>
         <footer className="footer" id="container">
           <div className="footer-list">
-            <span className="authors">
-              © 2021 My Task Bar from Maja, Łukasz, Radek & Aga
+            <span className="contact">
+              <img src={iconEmail} alt="envelope icon" className="envelope" />
+              Maja.Radek.Lukasz.Aga@gmail.com
             </span>
+            <span className="authors">© 2021 My Task Bar</span>
             <span className="freepik">
               {' '}
               <a href="http://www.freepik.com" className="freepik">
