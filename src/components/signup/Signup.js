@@ -1,5 +1,8 @@
 import './Signup.css';
 
+// import React from 'react';
+import iconEmail from '../../assets/iconEmail.png';
+
 function Signup() {
   return (
     <main>
@@ -9,7 +12,7 @@ function Signup() {
         <div className="log-in-form">
           <div className="login-panel">
             <form action="#">
-              <p>
+              <p className="form-paragraphs">
                 <label htmlFor="email"></label>
                 <input
                   type="email"
@@ -49,9 +52,11 @@ function Signup() {
         </div>
         <footer className="footer" id="container">
           <div className="footer-list">
-            <span className="authors">
-              © 2021 My Task Bar from Maja, Łukasz, Radek & Aga
+            <span className="contact">
+              <img src={iconEmail} alt="envelope icon" className="envelope" />
+              Maja.Radek.Lukasz.Aga@gmail.com
             </span>
+            <span className="authors">© 2021 My Task Bar</span>
             <span className="freepik">
               {' '}
               <a href="http://www.freepik.com" className="freepik">
