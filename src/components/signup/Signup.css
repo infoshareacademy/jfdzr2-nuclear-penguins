@@ -102,20 +102,19 @@ div.footer-list {
   flex-direction: column;
   justify-content: center;
   margin-right: 0;
-  /* margin-top: 40px; */
-}
-
-span.authors {
-  display: flex;
-  justify-content: center;
-  color: grey;
-  /* display: none; */
 }
 
 img.envelope {
   width: 22px;
   height: 22px;
   margin-right: 8px;
+}
+span.authors {
+  display: flex;
+  justify-content: center;
+  color: grey;
+  font-size: 15px;
+  /* display: none; */
 }
 
 .contact {
@@ -124,7 +123,7 @@ img.envelope {
   text-decoration: none;
   color: grey;
   padding: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .freepik {
@@ -139,7 +138,6 @@ img.envelope {
 }
 #container {
   position: fixed;
-
   bottom: 4%;
   width: 100%;
 }
@@ -161,6 +159,10 @@ img.envelope {
   .box {
     display: flex;
     flex-direction: column;
+    font-size: 12px;
+  }
+
+  span.authors {
     font-size: 12px;
   }
   div.app-name {
@@ -196,7 +198,6 @@ img.envelope {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* display: none; */
   }
   img.envelope {
     width: 18px;
