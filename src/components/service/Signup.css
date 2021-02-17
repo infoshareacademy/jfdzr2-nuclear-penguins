@@ -12,7 +12,7 @@ html {
   display: flex;
   font-family: 'Lato', sans-serif;
   color: black;
-  font-size: 1vw;
+  font-size: 19px;
 }
 
 .log-in-form {
@@ -26,11 +26,11 @@ div.app-name-mobile {
 
 div.app-name {
   font-family: 'Lobster', cursive;
-  font-size: 2.3vw;
+  font-size: 2.4vw;
   text-align: center;
   transform: rotate(-3deg);
   display: flex;
-  padding-top: 18.6%;
+  padding-top: 18.5%;
   padding-left: 23%;
 }
 
@@ -39,8 +39,8 @@ div.login-panel {
   flex-direction: column;
   padding-top: 3%;
   padding-bottom: 3%;
-  margin-left: 19%;
-  margin-top: 43%;
+  margin-left: 17%;
+  margin-top: 55%;
   justify-content: center;
   width: 26vw;
   border: solid 1px rgb(223, 216, 216);
@@ -67,24 +67,24 @@ div.flex-div {
   justify-content: center;
 }
 
+p.form-paragraphs {
+  margin: 4% 0 4% 0;
+}
+
 input.input-design {
   width: 70%;
-  height: 2vw;
+  height: 2.2vw;
   padding-left: 2%;
 }
 
 input.input-design,
 input.login-button {
-  font-size: 0.9vw;
+  font-size: 20px;
 }
 
 .login-button {
   width: 70%;
-  height: 2vw;
-}
-
-p#sign-up-option {
-  margin-top: 6%;
+  height: 2.1vw;
 }
 
 #sign-up-option-2 {
@@ -92,47 +92,50 @@ p#sign-up-option {
   padding-top: 2%;
 }
 
-/* select#menu {
-    display: flex;
-    margin-left: 45%;
-    margin-top: 4%;
-    width: 90px;
-    width: 22%;
-    height: 25%;
-    font-size: 0.9vw;
-    background: none;
-    border: 2px solid #edeff0;
-    padding: 6px;
-  } */
+.footer#container.footer {
+  display: flex;
+  flex-direction: column;
+}
 
 div.footer-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-right: 0%;
-  margin-top: 10vw;
+  margin-right: 0;
 }
 
+img.envelope {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
 span.authors {
   display: flex;
-  padding-top: 9px;
-  text-align: right;
-  font-size: 1vw;
-  font-family: 'Lato', sans-serif;
+  justify-content: center;
   color: grey;
+  font-size: 15px;
   /* display: none; */
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: grey;
+  padding: 1px;
+  margin-bottom: 13px;
 }
 
 .freepik {
   display: flex;
+  justify-content: center;
   padding-top: 4.5px;
   text-align: center;
   text-decoration: none;
-  font-size: 1 vw;
   font-family: 'Lato', sans-serif;
   color: grey;
   display: none;
 }
-
 #container {
   position: fixed;
   bottom: 4%;
@@ -140,16 +143,27 @@ span.authors {
 }
 
 /* MEDIA */
+@media (max-width: 319px) {
+  html {
+    display: none;
+  }
+}
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
   html {
     background: url('/src/assets/backgroundMobile.jpg') no-repeat center center
       fixed;
     background-size: 100% 100%;
   }
+
   .box {
     display: flex;
     flex-direction: column;
+    font-size: 12px;
+  }
+
+  span.authors {
+    font-size: 12px;
   }
   div.app-name {
     display: none;
@@ -158,16 +172,15 @@ span.authors {
     display: flex;
     justify-content: center;
     font-family: 'Lobster', cursive;
-    font-size: 26px;
+    font-size: 21px;
     padding-top: 3%;
   }
   div.login-panel {
     width: 53vw;
-    font-size: 3.5vw;
-    margin-left: 0%;
-    margin-top: 49%;
+    margin-left: 0;
     padding-top: 4%;
     padding-bottom: 2%;
+    /* margin-top: 40%; */
   }
   p#sign-up-option,
   p#sign-up-option-2 {
@@ -178,24 +191,21 @@ span.authors {
   input.login-button {
     width: 80%;
     height: 7vw;
-    font-size: 3.7vw;
+    font-size: 12px;
   }
   span.authors {
-    font-size: 3.3vw;
     padding: 1px;
     width: 100%;
     display: flex;
     justify-content: center;
-    /* display: none; */
   }
-  .freepik {
-    display: flex;
-    font-size: 3vw;
-    display: none;
+  img.envelope {
+    width: 18px;
+    height: 18px;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+@media (min-width: 481px) and (max-width: 768px) {
   html {
     background: url('/src/assets/backgroundMobile.jpg') no-repeat center center
       fixed;
@@ -204,6 +214,7 @@ span.authors {
   .box {
     display: flex;
     flex-direction: column;
+    font-size: 14px;
   }
   div.app-name {
     display: none;
@@ -213,43 +224,39 @@ span.authors {
     font-family: 'Lobster', cursive;
     justify-content: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 23px;
     padding-bottom: 0;
     padding-top: 2%;
   }
   div.login-panel {
     width: 57%;
     margin-left: 7%;
-    margin-top: 37%;
+    margin-top: 40%;
     padding: 1%;
-    font-size: 2.8vw;
   }
+
   p#sign-up-option,
   p#sign-up-option-2 {
     margin-bottom: 0;
     padding: 0;
   }
-  div.footer-list {
-    margin-right: 5%;
-  }
+
   input.input-design,
   input.login-button {
     width: 79%;
     height: 6vw;
-    font-size: 2.8vw;
+    font-size: 12px;
   }
   span.authors {
-    font-size: 2.5vw;
     padding: 1px;
     width: 100%;
     display: flex;
     justify-content: center;
-    /* display: none; */
   }
-  .freepik {
-    display: flex;
-    font-size: 2vw;
-    display: none;
+  img.envelope {
+    width: 20px;
+    height: 20px;
+    padding-bottom: px;
   }
 }
 
@@ -262,6 +269,7 @@ span.authors {
   .box {
     display: flex;
     flex-direction: column;
+    font-size: 15px;
   }
   div.app-name {
     display: none;
@@ -271,7 +279,7 @@ span.authors {
     font-family: 'Lobster', cursive;
     justify-content: center;
     text-align: center;
-    font-size: 45px;
+    font-size: 30px;
     padding-bottom: 0;
     padding-top: 3%;
   }
@@ -281,7 +289,6 @@ span.authors {
     margin-top: 26%;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-size: 2.6vw;
   }
   p#sign-up-option,
   p#sign-up-option-2 {
@@ -292,19 +299,12 @@ span.authors {
   input.login-button {
     width: 77%;
     height: 5.5vw;
-    font-size: 2.6vw;
+    font-size: 12px;
   }
   span.authors {
-    font-size: 2vw;
     padding: 1px;
     display: flex;
     justify-content: center;
-    /* display: none; */
-  }
-  .freepik {
-    display: flex;
-    font-size: 2vw;
-    display: none;
   }
 }
 
@@ -312,12 +312,14 @@ span.authors {
   html {
     display: inherit;
   }
-  p#sign-up-option {
-    font-size: 1.2vw;
+
+  .box {
+    font-size: 13px;
   }
+
   div.login-panel {
-    margin-left: 17%;
-    margin-top: 44%;
+    margin-left: 10%;
+    margin-top: 49%;
     padding-top: 1%;
     padding-bottom: 1%;
   }
@@ -325,34 +327,32 @@ span.authors {
   input.login-button {
     width: 80%;
     height: 2.4vw;
-    font-size: 1.1vw;
+    font-size: 12px;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1025px) and (max-width: 1250px) {
   html {
     display: inherit;
   }
 
-  div.login-panel {
-    margin-left: 16%;
-    margin-top: 44%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+  .box {
+    font-size: 16px;
   }
 
   input.input-design,
   input.login-button {
-    font-size: 1.1vw;
-  }
-
-  p#sign-up-option {
-    font-size: 1.2vw;
+    font-size: 12px;
   }
 }
 
-@media (min-width: 1201px) and (max-width: 2000px) {
+@media (min-width: 1251px) and (max-width: 2000px) and (orientation: landscape) {
   html {
-    margin-top: 5%;
+    margin-top: 2%;
+  }
+
+  input.input-design,
+  input.login-button {
+    font-size: 17px;
   }
 }
