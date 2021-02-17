@@ -7,11 +7,12 @@
 
 body {
   background-color: #80604c;
+  font-family: 'Lato', sans-serif;
 }
 
 .logo {
   padding: 10px;
-  padding-left: 30px;
+  font-family: 'Lobster';
 }
 
 .navigation {
@@ -19,6 +20,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .menu {
