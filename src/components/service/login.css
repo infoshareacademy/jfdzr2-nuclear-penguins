@@ -91,56 +91,6 @@ p#sign-up-option {
   text-decoration: none;
   padding-top: 2%;
 }
-.footer#container.footer {
-  display: flex;
-  flex-direction: column;
-}
-
-div.footer-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 0%;
-  margin-top: 10vw;
-}
-img.envelope {
-  width: 23px;
-  height: 23px;
-  margin-right: 8px;
-  margin-top: 1px;
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 20px;
-  color: grey;
-}
-span.authors {
-  display: flex;
-  justify-content: center;
-  padding-top: 9px;
-  font-size: 18px;
-  color: grey;
-}
-
-.freepik {
-  display: flex;
-  padding-top: 4.5px;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 18px;
-  font-style: oblique;
-  color: grey;
-  display: none;
-}
-
-#container {
-  position: fixed;
-  bottom: 4%;
-  width: 100%;
-}
 
 /* MEDIA */
 
@@ -184,49 +134,9 @@ span.authors {
     height: 7vw;
     font-size: 3.7vw;
   }
-  img.envelope {
-    width: 15px;
-    height: 15px;
-    margin-top: 0;
-  }
-  .contact {
-    font-size: 13px;
-    padding: 1px;
-  }
-
-  span.authors {
-    font-size: 13px;
-    padding: 1px;
-  }
-
-  .freepik {
-    font-size: 13px;
-    padding: 0;
-    display: none;
-  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
-  img.envelope {
-    width: 15px;
-    height: 15px;
-    margin-top: 0;
-  }
-  .contact {
-    font-size: 12px;
-    padding: 1px;
-  }
-
-  span.authors {
-    font-size: 12px;
-    padding: 1px;
-  }
-
-  .freepik {
-    font-size: 12px;
-    padding: 0;
-    display: none;
-  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
@@ -264,34 +174,11 @@ span.authors {
     margin-bottom: 0;
     padding: 0;
   }
-  div.footer-list {
-    margin-right: 5%;
-  }
   input.input-design,
   input.login-button {
     width: 79%;
     height: 6vw;
     font-size: 2.8vw;
-  }
-
-  img.envelope {
-    width: 17px;
-    height: 17px;
-  }
-  .contact {
-    font-size: 13px;
-    padding: 1px;
-  }
-
-  span.authors {
-    font-size: 13px;
-    padding: 1px;
-  }
-
-  .freepik {
-    font-size: 13px;
-    padding: 0;
-    /* display: none; */
   }
 }
 
@@ -359,26 +246,6 @@ span.authors {
     height: 2.4vw;
     font-size: 1.1vw;
   }
-
-  img.envelope {
-    width: 20px;
-    height: 20px;
-    margin-top: 0;
-  }
-  .contact {
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-
-  span.authors {
-    font-size: 15px;
-    padding: 1px;
-  }
-
-  .freepik {
-    font-size: 15px;
-    display: none;
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -401,25 +268,5 @@ span.authors {
 
   p#sign-up-option {
     font-size: 1.2vw;
-  }
-
-  img.envelope {
-    width: 20px;
-    height: 20px;
-    margin-top: 0;
-  }
-  .contact {
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-
-  span.authors {
-    font-size: 15px;
-    padding: 1px;
-  }
-
-  .freepik {
-    font-size: 15px;
-    display: none;
   }
 }
