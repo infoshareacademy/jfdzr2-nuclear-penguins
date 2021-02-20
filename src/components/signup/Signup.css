@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -114,7 +114,6 @@ span.authors {
   justify-content: center;
   color: grey;
   font-size: 15px;
-  /* display: none; */
 }
 
 .contact {
@@ -142,7 +141,6 @@ span.authors {
   width: 100%;
 }
 
-/* MEDIA */
 @media (max-width: 319px) {
   html {
     display: none;
@@ -180,7 +178,6 @@ span.authors {
     margin-left: 0;
     padding-top: 4%;
     padding-bottom: 2%;
-    /* margin-top: 40%; */
   }
   p#sign-up-option,
   p#sign-up-option-2 {
@@ -355,4 +352,4 @@ span.authors {
   input.login-button {
     font-size: 17px;
   }
-}
+} */
