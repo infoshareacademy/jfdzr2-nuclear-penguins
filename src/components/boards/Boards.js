@@ -1,7 +1,6 @@
-import "./bar.css";
-import "../shared.css";
+import '../shared.css';
 
-export const Bartable = () => {
+export const Boards = () => {
   return (
     <>
       <nav className="navigation">
@@ -17,4 +16,4 @@ export const Bartable = () => {
   );
 };
 
-export default Bartable;
+export default Boards;
