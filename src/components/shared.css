@@ -1,38 +1,38 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color:  #331E16; 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #331e16;
 }
 
 body {
-    background-color: #80604C;
+  background-color: #80604c;
+  font-family: 'Lato', sans-serif;
 }
 
 .logo {
-    
-    padding: 10px;
-    padding-left: 30px;
-
+  padding: 10px;
+  font-family: 'Lobster';
 }
 
 .navigation {
-    background-color: #F7D6AB;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    
+  background-color: #f7d6ab;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .menu {
-    display: flex;
-    list-style-type: none;
-    padding-right: 30px;
+  display: flex;
+  list-style-type: none;
+  padding-right: 30px;
 }
 
 li {
-    display: block;
-    padding: 10px;
-    justify-content: flex-end;
-    cursor: pointer;
+  display: block;
+  padding: 10px;
+  justify-content: flex-end;
+  cursor: pointer;
 }

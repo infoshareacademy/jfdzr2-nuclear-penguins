@@ -1,6 +1,26 @@
-import './Login.css';
+import './login.css';
+import {NavLink, withRouter} from 'react-router-dom';
+import React, {useCallback} from 'react';
+import app from './Firebase';
+// import iconEmail from '../../assets/iconEmail.png';
 
-function Login() {
+function Signup({history}) {
+  const handleSignUp = useCallback(
+    async (event) => {
+      event.preventDefault();
+      const {email, password} = event.target.elements;
+      try {
+        await app
+          .auth()
+          .createUserWithEmailAndPassword(email.value, password.value);
+        history.push('/bartable');
+      } catch (error) {
+        alert(error);
+      }
+    },
+    [history]
+  );
+
   return (
     <main>
       <article className="main-container box">
@@ -8,7 +28,7 @@ function Login() {
         <div className="app-name">My Task Bar</div>
         <div className="log-in-form">
           <div className="login-panel">
-            <form action="#">
+            <form onSubmit={handleSignUp} action="#">
               <p>
                 <label htmlFor="email"></label>
                 <input
@@ -30,39 +50,23 @@ function Login() {
               <input
                 type="submit"
                 name="submit"
-                value="Log In"
+                value="Sign Up"
                 className="login-button"
               />
             </form>
             <div className="flex-div">
               <div className="sign-up">
                 <p id="sign-up-option">
-                  Don't have an account?
-                  <a id="sign-up-option-2" href="link">
-                    {' '}
-                    Sign up
-                  </a>
+                  Already have an account?
+                  <NavLink to={'/login'}> Log in</NavLink>
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <footer className="footer" id="container">
-          <div className="footer-list">
-            <span className="authors">
-              © 2021 My Task Bar from Maja, Łukasz, Radek & Aga
-            </span>
-            <span className="freepik">
-              {' '}
-              <a href="http://www.freepik.com" className="freepik">
-                Background photo designed by rawpixel.com / Freepik
-              </a>
-            </span>
-          </div>
-        </footer>
       </article>
     </main>
   );
 }
 
-export default Login;
+export default withRouter(Signup);

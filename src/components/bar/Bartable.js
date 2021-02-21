@@ -1,7 +1,7 @@
 import './bar.css';
 import '../shared.css';
 
-export const Bar = () => {
+export const Bartable = () => {
   return (
     <>
       <nav className="navigation">
@@ -16,3 +16,5 @@ export const Bar = () => {
     </>
   );
 };
+
+export default Bartable;

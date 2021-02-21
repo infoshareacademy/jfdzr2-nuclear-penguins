@@ -1,14 +1,18 @@
-import './SimpleNavigation.css';
+import '../navigation/homepage.css';
 import '../shared.css';
 
-export const SimpleNavigation = () => {
+import {NavLink} from 'react-router-dom';
+
+export const HomePage = () => {
   return (
     <>
       <nav className="navigation">
         <h1 className="logo">My Task Bar</h1>
         <ul className="menu">
-          <li className="login">Logowanie</li>
-          <li className="register">Rejestracja</li>
+          <NavLink className="link-nav" to={'/login'}>
+            Login
+          </NavLink>
+          <NavLink to={'/signup'}>Register</NavLink>
         </ul>
       </nav>
       <div className="welcome">
@@ -21,3 +25,5 @@ export const SimpleNavigation = () => {
     </>
   );
 };
+
+export default HomePage;

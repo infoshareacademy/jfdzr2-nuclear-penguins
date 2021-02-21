@@ -1,0 +1,272 @@
+main {
+  background: url('/src/assets/backgroundScreen.png') no-repeat;
+  background-color: rgba(243, 237, 234, 255);
+  background-size: 100vw 46vw;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 1vw;
+}
+
+.log-in-form {
+  display: flex;
+  margin-left: 19%;
+}
+
+div.app-name-mobile {
+  display: none;
+}
+
+div.app-name {
+  font-family: 'Lobster', cursive;
+  font-size: 2.3vw;
+  text-align: center;
+  transform: rotate(-3deg);
+  display: flex;
+  padding-top: 18.8%;
+  padding-left: 23%;
+}
+
+div.login-panel {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: 19%;
+  margin-top: 43%;
+  justify-content: center;
+  width: 26vw;
+  border: solid 1px rgb(223, 216, 216);
+  background-color: white;
+  text-align: center;
+  border-radius: 2%;
+}
+
+.log-in-title {
+  font-weight: bold;
+  padding-bottom: 4%;
+  padding-top: 4%;
+}
+
+form {
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+div.flex-div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3%;
+  justify-content: center;
+}
+
+input.input-design {
+  width: 70%;
+  height: 2vw;
+  padding-left: 2%;
+}
+
+input.input-design,
+input.login-button {
+  font-size: 0.9vw;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 0.5px solid black;
+}
+
+.login-button {
+  width: 70%;
+  height: 2vw;
+}
+
+p#sign-up-option {
+  margin-top: 6%;
+}
+
+#sign-up-option-2 {
+  text-decoration: none;
+  padding-top: 2%;
+}
+
+/* MEDIA */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  main {
+    background: url('/src/assets/backgroundMobile.jpg') no-repeat center center
+      fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  div.app-name {
+    display: none;
+  }
+  div.app-name-mobile {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 26px;
+    padding-top: 3%;
+  }
+  div.login-panel {
+    width: 53vw;
+    font-size: 3.5vw;
+    margin-left: 0%;
+    margin-top: 49%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+  }
+  p#sign-up-option,
+  p#sign-up-option-2 {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  input.input-design,
+  input.login-button {
+    width: 80%;
+    height: 7vw;
+    font-size: 3.7vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  main {
+    background: url('/src/assets/backgroundMobile.jpg') no-repeat center center
+      fixed;
+    background-size: 100% 102%;
+    height: 100vh;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  div.app-name {
+    display: none;
+  }
+  div.app-name-mobile {
+    display: flex;
+    font-family: 'Lobster', cursive;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 0;
+    padding-top: 2%;
+  }
+  div.login-panel {
+    width: 57%;
+    margin-left: 7%;
+    margin-top: 37%;
+    padding: 1%;
+    font-size: 2.8vw;
+  }
+  p#sign-up-option,
+  p#sign-up-option-2 {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  input.input-design,
+  input.login-button {
+    width: 79%;
+    height: 6vw;
+    font-size: 2.8vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  main {
+    background: url('/src/assets/backgroundMobile.jpg') no-repeat center center
+      fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  div.app-name {
+    display: none;
+  }
+  div.app-name-mobile {
+    display: flex;
+    font-family: 'Lobster', cursive;
+    justify-content: center;
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 0;
+    padding-top: 3%;
+  }
+  div.login-panel {
+    width: 51%;
+    margin-left: 10%;
+    margin-top: 26%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 2.6vw;
+  }
+  p#sign-up-option,
+  p#sign-up-option-2 {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  input.input-design,
+  input.login-button {
+    width: 77%;
+    height: 5.5vw;
+    font-size: 2.6vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  main {
+    display: inherit;
+    height: 100vh;
+  }
+  p#sign-up-option {
+    font-size: 1.2vw;
+  }
+  div.login-panel {
+    margin-left: 17%;
+    margin-top: 44%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  input.input-design,
+  input.login-button {
+    width: 80%;
+    height: 2.4vw;
+    font-size: 1.1vw;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  main {
+    display: inherit;
+    height: 100vh;
+  }
+
+  div.login-panel {
+    margin-left: 16%;
+    margin-top: 44%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  input.input-design,
+  input.login-button {
+    font-size: 1.1vw;
+  }
+
+  p#sign-up-option {
+    font-size: 1.2vw;
+  }
+}
