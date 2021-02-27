@@ -1,0 +1,33 @@
+.workBoards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.board {
+  display: block;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.toDo {
+  background-color: #80604c;
+  opacity: 0.5;
+}
+
+.inProgress {
+  background-color: #bb9777;
+}
+
+.done {
+  background-color: #f7d6ab;
+}
+
+/* .color1 {color: #331E16;}
+.color2 {color: #533C2E;}
+.color3 {color: #80604C;}
+.color4 {color: #BB9777;}
+.color5 {color: #F7D6AB;} */
