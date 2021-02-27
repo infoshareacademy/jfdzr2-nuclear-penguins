@@ -1,4 +1,5 @@
 import '../shared.css';
+import './boards.css';
 
 export const Boards = () => {
   return (
@@ -13,9 +14,9 @@ export const Boards = () => {
         </ul>
       </nav>
       <div className="workBoards">
-        <div className="toDo"></div>
-        <div className="inProgress"></div>
-        <div className="done"></div>
+        <div className="toDo board">To do</div>
+        <div className="inProgress board">In progress</div>
+        <div className="done board">Done</div>
       </div>
     </>
   );
