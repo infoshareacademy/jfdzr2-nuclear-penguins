@@ -6,17 +6,19 @@
 .board {
   display: block;
   margin: 10px;
-  padding: 5px;
-  width: 200px;
-  height: 200px;
+  padding: 5px 20px 5px 20px;
+  width: 30%;
+  min-height: 75vh;
   text-align: left;
   font-style: italic;
   font-weight: bold;
-  border: 2px outset #331e16;
+  border: 2px double #331e16;
 }
 
 .toDo {
-  background-color: #80604c;
+  background-color: #f7d6ab;
+  display: flex;
+  justify-content: space-between;
 }
 
 .inProgress {
@@ -24,7 +26,7 @@
 }
 
 .done {
-  background-color: #f7d6ab;
+  background-color: #80604c;
 }
 
 /* .color1 {color: #331E16;}
