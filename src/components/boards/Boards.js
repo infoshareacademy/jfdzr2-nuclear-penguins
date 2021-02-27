@@ -14,7 +14,9 @@ export const Boards = () => {
         </ul>
       </nav>
       <div className="workBoards">
-        <div className="toDo board">To do</div>
+        <div className="toDo board">
+          To do <span className="addNote">+</span>
+        </div>
         <div className="inProgress board">In progress</div>
         <div className="done board">Done</div>
       </div>
