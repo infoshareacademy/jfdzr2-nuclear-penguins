@@ -12,6 +12,11 @@ export const Boards = () => {
           <li className="account">Moje konto</li>
         </ul>
       </nav>
+      <div className="workBoards">
+        <div className="toDo"></div>
+        <div className="inProgress"></div>
+        <div className="done"></div>
+      </div>
     </>
   );
 };
