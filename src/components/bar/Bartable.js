@@ -1,5 +1,6 @@
 import './bar.css';
 import '../shared.css';
+import {TableChanger} from './TableChanger';
 
 export const Bartable = () => {
   return (
@@ -13,6 +14,7 @@ export const Bartable = () => {
           <li className="account">Moje konto</li>
         </ul>
       </nav>
+      <TableChanger />
     </>
   );
 };
