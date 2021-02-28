@@ -6,8 +6,6 @@
 }
 
 body {
-  /* background-color: #80604c; */
-  /* background-color: #6e5241; */
   background-color: #584133;
   font-family: 'Lato', sans-serif;
 }
@@ -20,8 +18,7 @@ h1.logo {
 }
 
 .navigation {
-  /* background-color: #f7d6ab; */
-  background-color: rgba(243, 237, 234, 255);
+  background-color: #f3edea;
   display: flex;
   justify-content: space-between;
   padding: 15px;

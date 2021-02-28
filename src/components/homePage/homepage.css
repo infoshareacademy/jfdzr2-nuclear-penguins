@@ -1,27 +1,24 @@
 .welcome {
   width: 650px;
   height: auto;
-  /* background-color: #f7d6ab; */
   text-align: center;
   margin: 20px auto;
   padding: 40px 50px;
-  letter-spacing: 1px;
 }
 
 .title {
   padding: 10px;
-  color: beige;
+  color: #f3f2ed;
   font-size: 30px;
 }
 
 .title-2 {
-  color: beige;
-
+  color: #f3f2ed;
   font-family: Lobster;
 }
 
 .introduction {
-  color: beige;
+  color: #f3f2ed;
   font-size: 22px;
   width: 600px;
 }
@@ -36,9 +33,6 @@ ul {
 .link-register,
 .link-nav {
   text-decoration: none;
-  width: 100%;
-  padding: 5px 13px 5px 13px;
-  font-size: 21px;
 }
 
 .chocolate-row1,
@@ -60,18 +54,14 @@ ul {
 .p1,
 .p2,
 .p3 {
-  border: 5px solid white;
+  color: #331e16;
+  font-size: 22px;
+  background-color: #f3edea;
+  border: 5px solid;
   border-radius: 6%;
+  border-color: #fed5c3;
   padding: 20px;
   width: 265px;
-  /* background-color: #f7d6ab; */
-  /* background-color: #ad8d79; */
-  /* background-color: #a78570; */
-  background-color: rgba(243, 237, 234, 255);
-  /* border-color: rgba(243, 237, 234, 255); */
-  border-color: #f7d0ab;
-  color: black;
-  font-size: 22px;
   margin-left: 28px;
 }
 
@@ -81,9 +71,7 @@ ul {
 }
 
 .footer-space {
-  /* background-color: #f7d6ab; */
-  background-color: rgba(243, 237, 234, 255);
-
+  background-color: #f3edea;
   position: fixed;
   bottom: 0;
   width: 100%;

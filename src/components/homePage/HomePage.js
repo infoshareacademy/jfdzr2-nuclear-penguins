@@ -10,10 +10,10 @@ export const HomePage = () => {
         <h1 className="logo">My Task Bar</h1>
         <ul className="menu">
           <NavLink className="link-nav" to={'/login'}>
-            Login
+            Zaloguj
           </NavLink>
           <NavLink className="link-register" to={'/signup'}>
-            Register
+            Zarejestruj się
           </NavLink>
         </ul>
       </nav>
@@ -22,7 +22,7 @@ export const HomePage = () => {
           Witaj na stronie <span className="title-2"> My Task Bar!</span>{' '}
         </h2>
         <p className="introduction">
-          Pomożemy Ci w w organizacji codziennej pracy. Wyznacz swoje cele,
+          Pomożemy Ci w organizacji codziennej pracy. Wyznacz swoje cele,
           podziel pracę na zadania, poczuj smak satysfakcji z ukończonych zadań.
         </p>
       </div>
@@ -43,11 +43,11 @@ export const HomePage = () => {
       </div>
       <div className="chocolate-row2">
         <p className="p1">
-          Przejrzystośc - wystarczy jeden rzut okiem, by wiedzieć na jakim
+          Przejrzystość - wystarczy jeden rzut okiem, by wiedzieć na jakim
           etapie realizacji jest Twój task.
         </p>
         <p className="p2">
-          Narzędzie jest proste i intuicyjne w użyciu. Zmiana statusów nastepuje
+          Narzędzie jest proste i intuicyjne w użyciu. Zmiana statusu następuje
           za pomocą funkcji Drag&Drop.
         </p>
         <p className="p3 last-bar">
