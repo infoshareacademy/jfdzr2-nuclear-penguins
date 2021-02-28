@@ -1,4 +1,5 @@
 import '../shared.css';
+import './boards.css';
 
 export const Boards = () => {
   return (
@@ -12,6 +13,13 @@ export const Boards = () => {
           <li className="account">Moje konto</li>
         </ul>
       </nav>
+      <div className="workBoards">
+        <div className="toDo board">
+          To do <span className="addNote">+</span>
+        </div>
+        <div className="inProgress board">In progress</div>
+        <div className="done board">Done</div>
+      </div>
     </>
   );
 };

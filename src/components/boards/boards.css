@@ -1,0 +1,36 @@
+.workBoards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.board {
+  display: block;
+  margin: 10px;
+  padding: 5px 20px 5px 20px;
+  width: 30%;
+  min-height: 75vh;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+  border: 2px double #331e16;
+}
+
+.toDo {
+  background-color: #f7d6ab;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inProgress {
+  background-color: #bb9777;
+}
+
+.done {
+  background-color: #80604c;
+}
+
+/* .color1 {color: #331E16;}
+.color2 {color: #533C2E;}
+.color3 {color: #80604C;}
+.color4 {color: #BB9777;}
+.color5 {color: #F7D6AB;} */
