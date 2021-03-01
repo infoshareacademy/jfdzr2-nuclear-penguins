@@ -1,4 +1,4 @@
-import '../navigation/homepage.css';
+import '../homePage/homepage.css';
 import '../shared.css';
 
 import {NavLink} from 'react-router-dom';

@@ -1,8 +1,8 @@
-import './bar.css';
 import '../shared.css';
 import {TableChanger} from './TableChanger';
+import './boards.css';
 
-export const Bartable = () => {
+export const Boards = () => {
   return (
     <>
       <nav className="navigation">
@@ -15,8 +15,15 @@ export const Bartable = () => {
         </ul>
       </nav>
       <TableChanger />
+      <div className="workBoards">
+        <div className="toDo board">
+          To do <span className="addNote">+</span>
+        </div>
+        <div className="inProgress board">In progress</div>
+        <div className="done board">Done</div>
+      </div>
     </>
   );
 };
 
-export default Bartable;
+export default Boards;

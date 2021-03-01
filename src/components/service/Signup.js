@@ -1,4 +1,4 @@
-import './login.css';
+import './loginAndRegister.css';
 import {NavLink, withRouter} from 'react-router-dom';
 import React, {useCallback} from 'react';
 import app from './Firebase';
