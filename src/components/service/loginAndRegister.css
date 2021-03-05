@@ -1,6 +1,6 @@
 main {
   background: url('/src/assets/backgroundScreen.png') no-repeat;
-  background-color: rgba(243, 237, 234, 255);
+  background-color: #f3edea;
   background-size: 100vw 46vw;
   height: 100vh;
 }
