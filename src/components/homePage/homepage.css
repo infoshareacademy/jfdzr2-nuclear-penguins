@@ -35,25 +35,16 @@ ul {
   text-decoration: none;
 }
 
-.chocolate-row1,
-.chocolate-row2 {
+.home--square--row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
   width: 47vw;
-}
-
-.chocolate-row2 {
   margin-top: 29px;
 }
-.chocolate-row1 {
-  margin-bottom: 40px;
-}
 
-.p1,
-.p2,
-.p3 {
+.home--paragraph {
   color: #331e16;
   font-size: 22px;
   background-color: #f3edea;
@@ -65,7 +56,7 @@ ul {
   margin-left: 28px;
 }
 
-.last-bar {
+.home--last--square {
   transform: rotate(15deg);
   margin-top: 20px;
 }

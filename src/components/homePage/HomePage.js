@@ -27,36 +27,38 @@ export const HomePage = () => {
         </p>
       </div>
 
-      <div className="chocolate-row1">
-        <p className="p1">
-          My Task Bar to wirtualna tablica, którą wypełnisz swoimi zadaniami i
-          notatkami.
-        </p>
-        <p className="p2">
-          Aplikacja pomoże Ci zorganizować zarówno pracę zawodową, dom jak i
-          życie osobiste.
-        </p>
-        <p className="p3">
-          My Task Bar pozwoli Ci na efektywne zarządzanie czasem oraz pomoże Ci
-          łatwiej osiągnąć założone cele.
-        </p>
-      </div>
-      <div className="chocolate-row2">
-        <p className="p1">
-          Przejrzystość - wystarczy jeden rzut okiem, by wiedzieć na jakim
-          etapie realizacji jest Twój task.
-        </p>
-        <p className="p2">
-          Narzędzie jest proste i intuicyjne w użyciu. Zmiana statusu następuje
-          za pomocą funkcji Drag&Drop.
-        </p>
-        <p className="p3 last-bar">
-          My Task Bar kojarzy Ci się z czekoladą? Świetnie! Niech każdy
-          ukończony task przyniesie Ci słodki smak satysfakcji!
-        </p>
-      </div>
+      <div>
+        <div className="home--square--row">
+          <p className="home--paragraph">
+            My Task Bar to wirtualna tablica, którą wypełnisz swoimi zadaniami i
+            notatkami.
+          </p>
+          <p className="home--paragraph">
+            Aplikacja pomoże Ci zorganizować zarówno pracę zawodową, dom jak i
+            życie osobiste.
+          </p>
+          <p className="home--paragraph">
+            My Task Bar pozwoli Ci na efektywne zarządzanie czasem oraz pomoże
+            Ci łatwiej osiągnąć założone cele.
+          </p>
+        </div>
+        <div className="home--square--row">
+          <p className="home--paragraph">
+            Przejrzystość - wystarczy jeden rzut okiem, by wiedzieć na jakim
+            etapie realizacji jest Twój task.
+          </p>
+          <p className="home--paragraph">
+            Narzędzie jest proste i intuicyjne w użyciu. Zmiana statusu
+            następuje za pomocą funkcji Drag&Drop.
+          </p>
+          <p className="home--paragraph home--last--square">
+            My Task Bar kojarzy Ci się z czekoladą? Świetnie! Niech każdy
+            ukończony task przyniesie Ci słodki smak satysfakcji!
+          </p>
+        </div>
 
-      <div className="footer-space"></div>
+        <div className="footer-space"></div>
+      </div>
     </div>
   );
 };
