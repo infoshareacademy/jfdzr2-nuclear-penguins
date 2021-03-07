@@ -1,0 +1,51 @@
+.plus {
+  width: 20px;
+  height: 20px;
+}
+.title {
+  color: #f3edea;
+  font-size: 40px;
+  font-weight: 800;
+}
+label {
+  color: #f3edea;
+  font-weight: 900;
+  font-size: large;
+  margin-bottom: 10px;
+}
+.createTableForm {
+  width: 400px;
+  position: relative;
+  margin: auto;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+}
+.tableCreator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input,
+select {
+  height: 40px;
+  font-size: large;
+  margin-bottom: 15px;
+  border-radius: 9px;
+}
+.submit {
+  background-color: #584133;
+  color: #f3edea;
+  margin-left: 10px;
+  border-style: none;
+  border-radius: 6px;
+  width: 120px;
+  height: 40px;
+  border: 2px #f3edea solid;
+}
+.submit:hover {
+  background-color: #f3edea;
+  color: #584133;
+}

@@ -1,18 +1,14 @@
 import '../shared.css';
+import {TableChanger} from '../tables/TableChanger';
 import './boards.css';
+
+import {Navigation} from '../navigation/Navigation';
 
 export const Boards = () => {
   return (
     <>
-      <nav className="navigation">
-        <h1 className="logo">My Task Bar</h1>
-        <ul className="menu">
-          <li className="add">+</li>
-          <li className="boards">Tablice</li>
-          <li className="popUp">Powiadomienia</li>
-          <li className="account">Moje konto</li>
-        </ul>
-      </nav>
+      <Navigation />
+      <TableChanger />
       <div className="workBoards">
         <div className="toDo board">
           To do <span className="addNote">+</span>
