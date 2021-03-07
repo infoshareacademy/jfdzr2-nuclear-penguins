@@ -6,22 +6,25 @@
 }
 
 body {
-  background-color: #80604c;
+  background-color: #584133;
   font-family: 'Lato', sans-serif;
 }
 
-.logo {
-  padding: 10px;
+h1.logo {
+  padding: 8px;
   font-family: 'Lobster';
+  transform: rotate(-3deg);
+  font-size: 30px;
 }
 
 .navigation {
-  background-color: #f7d6ab;
+  background-color: #f3edea;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 15px;
   padding-left: 50px;
   padding-right: 50px;
+  width: auto;
 }
 
 .menu {
