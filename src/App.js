@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Signup from './components/service/Signup';
 import Boards from './components/boards/Boards';
 import Footer from './components/footer/Footer';
+import {TableAdder} from './components/tables/TableAdder';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/bartable" component={Boards} />
+          <Route exact path="/bartable/tableAdder" component={TableAdder} />
           <Route exact path="/footer" component={Footer} />
         </Switch>
       </Router>

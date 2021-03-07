@@ -1,0 +1,11 @@
+.selectTable {
+  width: 130px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.addToFav {
+  color: #f7d6ab;
+  font-weight: 'bold';
+  padding-left: 20px;
+}
