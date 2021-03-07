@@ -24,7 +24,8 @@ h1.logo {
   padding: 15px;
   padding-left: 50px;
   padding-right: 50px;
-  width: auto;
+  /* width: auto; */
+  /* width: 100vw; */
 }
 
 .menu {
@@ -38,4 +39,33 @@ li {
   padding: 10px;
   justify-content: flex-end;
   cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  h1.logo {
+    font-size: 22px;
+    padding-left: 9px;
+  }
+  .navigation {
+    padding: 0px;
+  }
+  .menu {
+    padding-right: 0;
+  }
+
+  p.paragraph--introduction {
+    margin: 0 11vw 0 11vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .menu {
+    padding-right: 0;
+  }
 }
