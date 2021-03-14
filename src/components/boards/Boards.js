@@ -11,10 +11,15 @@ export const Boards = () => {
       <TableChanger />
       <div className="workBoards">
         <div className="toDo board">
-          To do <span className="addNote">+</span>
+          <h1>To do</h1> <span className="addNote">+</span>
         </div>
-        <div className="inProgress board">In progress</div>
-        <div className="done board">Done</div>
+        <div className="inProgress board">
+          <h1>In progress</h1>
+          <div>Move me please</div>
+        </div>
+        <div className="done board">
+          <h1>Done</h1>
+        </div>
       </div>
     </>
   );
