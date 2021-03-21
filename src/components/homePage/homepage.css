@@ -1,43 +1,3 @@
-/* .cloud_1_init {
-  top: 73%;
-  left: 83%;
-  position: absolute;
-}
-.cloud_1_init:after,
-.cloud_1_init:before {
-  content: '';
-} */
-
-/* .cloud_1_init:after {
-  position: absolute;
-  top: 36px;
-  left: -17px;
-  height: 40px;
-  width: 32px;
-  background: #584133;
-  border-radius: 90px;
-}
-
-.cloud_2_init {
-  position: absolute;
-  top: 148px;
-  left: 216px;
-  height: 54px;
-  width: 51px;
-  background: #584133;
-  border-radius: 90px;
-}
-
-.cloud_3_init {
-  position: absolute;
-  top: 130px;
-  left: 243px;
-  height: 30px;
-  width: 45px;
-  background: #584133;
-  border-radius: 90px;
-} */
-
 .circle_1_init {
   position: absolute;
   top: 90%;
@@ -46,7 +6,6 @@
   width: 26%;
   background: #584133;
   border-radius: 100px;
-  /* background: red; */
 }
 
 .circle_2_init {
@@ -57,7 +16,6 @@
   width: 25%;
   background: #584133;
   border-radius: 100px;
-  /* background: purple; */
 }
 
 .circle_3_init {
@@ -68,12 +26,10 @@
   width: 13%;
   background: #584133;
   border-radius: 100px;
-  /* background: pink; */
 }
 
 div.cover--square--horizontal {
   background-color: #584133;
-  /* background-color: blue; */
   position: absolute;
   content: '';
   width: 27%;
@@ -83,7 +39,6 @@ div.cover--square--horizontal {
 }
 
 div.cover--square--vertical {
-  /* background-color: red; */
   background-color: #584133;
   position: absolute;
   content: '';
@@ -161,7 +116,7 @@ div.square-container {
   width: 268px;
   margin-left: 28px;
   text-align: center;
-  padding: 2.5%; /* new */
+  padding: 2.5%;
 }
 
 .home--last--square {
@@ -181,15 +136,37 @@ div.square-container {
   div.cover--square--horizontal {
     top: 105%;
     left: 82%;
-    width: 30%;
-    /* background-color: red; */
+    width: 20%;
   }
 
   div.cover--square--vertical {
     left: 102%;
     height: 61.5%;
-    width: 20%;
-    /* background-color: red; */
+    width: 4%;
+  }
+
+  .circle_1_init {
+    position: absolute;
+    top: 90%;
+    left: 83.5%;
+    height: 20%;
+    width: 10%;
+  }
+
+  .circle_2_init {
+    position: absolute;
+    top: 75%;
+    left: 89%;
+    height: 31%;
+    width: 15%;
+  }
+
+  .circle_3_init {
+    position: absolute;
+    top: 63%;
+    left: 96%;
+    height: 20%;
+    width: 9%;
   }
 
   div.home--square--row {
@@ -238,6 +215,30 @@ div.square-container {
     top: 104.5%;
   }
 
+  .circle_1_init {
+    position: absolute;
+    top: 91%;
+    left: 84%;
+    height: 20%;
+    width: 10%;
+  }
+
+  .circle_2_init {
+    position: absolute;
+    top: 77%;
+    left: 89%;
+    height: 28%;
+    width: 15%;
+  }
+
+  .circle_3_init {
+    position: absolute;
+    top: 65%;
+    left: 96%;
+    height: 19%;
+    width: 8%;
+  }
+
   p.paragraph--introduction {
     margin: 0 13vw 0 13vw;
   }
@@ -282,10 +283,33 @@ div.square-container {
   }
 
   div.cover--square--vertical {
-    left: 102%;
+    left: 102.4%;
     height: 80%;
     width: 20%;
-    /* background-color: red; */
+  }
+
+  .circle_1_init {
+    position: absolute;
+    top: 92%;
+    left: 84%;
+    height: 20%;
+    width: 12%;
+  }
+
+  .circle_2_init {
+    position: absolute;
+    top: 79%;
+    left: 90%;
+    height: 26%;
+    width: 15%;
+  }
+
+  .circle_3_init {
+    position: absolute;
+    top: 66%;
+    left: 97%;
+    height: 20%;
+    width: 10%;
   }
 
   p.home--paragraph {
