@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin: 20px 10px 5px 10px;
+  margin: 6px 10px 5px 10px;
 }
 
 .board {
@@ -10,7 +10,7 @@
   margin: 10px;
   padding: 5px 20px 5px 20px;
   width: 30%;
-  min-height: 70vh;
+  min-height: 68vh;
   text-align: left;
   font-style: italic;
   font-weight: bold;
@@ -35,14 +35,6 @@
   height: 20px;
   text-decoration: none;
 }
-
-/* .footer-space-nav {
-  background-color: #f3edea;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 10%;
-} */
 
 /* .color1 {color: #331E16;}
 .color2 {color: #533C2E;}
@@ -123,7 +115,7 @@
     display: flex;
     padding: 5px 20px 5px 20px;
     width: 87%;
-    min-height: 68vh;
+    min-height: 66vh;
   }
 }
 
@@ -137,6 +129,6 @@
     display: flex;
     padding: 5px 20px 5px 20px;
     width: 87%;
-    min-height: 22vh;
+    min-height: 21vh;
   }
 }

@@ -45,8 +45,16 @@ span.authors {
 
 #container {
   position: fixed;
-  bottom: 2%;
+  bottom: 1.5%;
   width: 100%;
+}
+
+.footer-space-nav {
+  background-color: #f3edea;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 9.5%;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -70,9 +78,15 @@ span.authors {
     padding: 0;
     display: none;
   }
+  .footer-space {
+    height: 7.5%;
+  }
+  .footer-space-nav {
+    height: 7.5%;
+  }
 }
 
-@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+/* @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
   img.envelope {
     width: 15px;
     height: 15px;
@@ -87,13 +101,7 @@ span.authors {
     font-size: 12px;
     padding: 1px;
   }
-
-  .freepik {
-    font-size: 12px;
-    padding: 0;
-    display: none;
-  }
-}
+} */
 
 @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
   div.footer-list {
@@ -118,30 +126,39 @@ span.authors {
     padding: 0;
     /* display: none; */
   }
+  .footer-space {
+    height: 7.5%;
+  }
+  .footer-space-nav {
+    height: 7.5%;
+  }
 }
 
 /* @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
 } */
 
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1024px) {
   img.envelope {
     width: 20px;
     height: 20px;
     margin-top: 0;
   }
   .contact {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 5px;
   }
 
   span.authors {
-    font-size: 15px;
+    font-size: 14px;
     padding: 1px;
   }
 
   .freepik {
-    font-size: 15px;
+    font-size: 14px;
     display: none;
+  }
+  .footer-space {
+    height: 9%;
   }
 }
 
@@ -164,5 +181,8 @@ span.authors {
   .freepik {
     font-size: 15px;
     display: none;
+  }
+  .footer-space {
+    height: 9%;
   }
 }
