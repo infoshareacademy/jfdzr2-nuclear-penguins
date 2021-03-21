@@ -6,6 +6,7 @@ import {Navigation} from '../navigation/Navigation';
 import {Task} from '../notes/Notes';
 import {DndProvider} from 'react-dnd';
 import {HTML5Backend} from 'react-dnd-html5-backend';
+import {DropPlace} from '../notes/DropPlace';
 
 export const Boards = () => {
   return (
@@ -24,7 +25,9 @@ export const Boards = () => {
           </div>
           <div className="done board">
             <h1>Done</h1>
-            <Task text="hej" />
+            <DropPlace>
+              <Task text="hej" />
+            </DropPlace>
           </div>
         </div>
       </DndProvider>
