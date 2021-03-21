@@ -26,7 +26,9 @@ export const Boards = () => {
           <div className="done board">
             <h1>Done</h1>
             <DropPlace>
-              <Task text="hej" />
+              <div>
+                <Task text="hej" />
+              </div>
             </DropPlace>
           </div>
         </div>

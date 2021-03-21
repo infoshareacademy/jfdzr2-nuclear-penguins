@@ -1,7 +1,20 @@
 import {ItemTypes} from './Constants';
 import {useDrop} from 'react-dnd';
 import {useState} from 'react';
-// import {getStyle} from 'react';
+
+function getStyle(backgroundColor) {
+  return {
+    border: '1px solid rgba(0,0,0,0.2)',
+    color: 'white',
+    backgroundColor,
+    padding: '2rem',
+    paddingTop: '1rem',
+    margin: '1rem',
+    textAlign: 'center',
+    float: 'left',
+    fontSize: '1rem',
+  };
+}
 
 export const DropPlace = ({greedy, children}) => {
   const [hasDropped, setHasDropped] = useState(false);
@@ -30,10 +43,7 @@ export const DropPlace = ({greedy, children}) => {
     backgroundColor = 'darkgreen';
   }
   return (
-    <div
-      ref={drop}
-      // style={getStyle(backgroundColor)}
-    >
+    <div ref={drop} style={getStyle(backgroundColor)}>
       {text}
       <br />
       {hasDropped && <span>dropped {hasDroppedOnChild && ' on child'}</span>}
