@@ -78,7 +78,6 @@ export const HomePage = () => {
             </p>
           </div>
         </div>
-
         <div className="footer-space"></div>
       </div>
     </div>
