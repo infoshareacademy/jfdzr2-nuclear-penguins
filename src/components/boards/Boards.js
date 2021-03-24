@@ -17,11 +17,19 @@ export const Boards = () => {
         <div className="workBoards">
           <div className="toDo board">
             <h1>To do</h1> <span className="addNote">+</span>
+            <DropPlace>
+              <div>
+                <Task text="czekolada" />
+              </div>
+            </DropPlace>
           </div>
           <div className="inProgress board">
             <h1>In progress</h1>
-            <div>Move me please</div>
-            <Task text="Write the docs" />
+            <DropPlace>
+              <div>
+                <Task text="ciastko" />
+              </div>
+            </DropPlace>
           </div>
           <div className="done board">
             <h1>Done</h1>
