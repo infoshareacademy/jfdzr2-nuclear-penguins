@@ -1,7 +1,57 @@
+.circle_1_init {
+  position: absolute;
+  top: 90%;
+  left: 76%;
+  height: 20%;
+  width: 26%;
+  background: #584133;
+  border-radius: 100px;
+}
+
+.circle_2_init {
+  position: absolute;
+  top: 79%;
+  left: 83%;
+  height: 26%;
+  width: 25%;
+  background: #584133;
+  border-radius: 100px;
+}
+
+.circle_3_init {
+  position: absolute;
+  top: 69%;
+  left: 93%;
+  height: 20%;
+  width: 13%;
+  background: #584133;
+  border-radius: 100px;
+}
+
+div.cover--square--horizontal {
+  background-color: #584133;
+  position: absolute;
+  content: '';
+  width: 27%;
+  height: 30%;
+  top: 102.5%;
+  left: 75%;
+}
+
+div.cover--square--vertical {
+  background-color: #584133;
+  position: absolute;
+  content: '';
+  width: 7%;
+  height: 65%;
+  top: 43%;
+  left: 102%;
+}
+
 .welcome {
   height: auto;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 1.5%;
   padding: 15px 0 15px 0;
   display: flex;
   justify-content: center;
@@ -28,7 +78,7 @@ div.introduction {
 
 .paragraph--introduction {
   color: #f3f2ed;
-  margin: 0 30vw 0 30vw;
+  margin: 0 29vw 0 29vw;
 }
 
 ul {
@@ -46,7 +96,7 @@ div.square-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 1%;
+  margin-top: 0.5%;
 }
 
 .home--square--row {
@@ -62,15 +112,16 @@ div.square-container {
   border: 5px solid;
   border-radius: 6%;
   border-color: #fed5c3;
-  padding: 18px;
-  width: 265px;
+  padding: 21px;
+  width: 268px;
   margin-left: 28px;
   text-align: center;
+  padding: 2.5%;
 }
 
 .home--last--square {
   transform: rotate(15deg);
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .footer-space {
@@ -82,6 +133,42 @@ div.square-container {
 }
 
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  div.cover--square--horizontal {
+    top: 105%;
+    left: 82%;
+    width: 20%;
+  }
+
+  div.cover--square--vertical {
+    left: 102%;
+    height: 61.5%;
+    width: 4%;
+  }
+
+  .circle_1_init {
+    position: absolute;
+    top: 90%;
+    left: 83.5%;
+    height: 20%;
+    width: 10%;
+  }
+
+  .circle_2_init {
+    position: absolute;
+    top: 75%;
+    left: 89%;
+    height: 31%;
+    width: 15%;
+  }
+
+  .circle_3_init {
+    position: absolute;
+    top: 63%;
+    left: 96%;
+    height: 20%;
+    width: 9%;
+  }
+
   div.home--square--row {
     display: flex;
     flex-direction: column;
@@ -124,6 +211,34 @@ div.square-container {
 }
 
 @media (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
+  div.cover--square--horizontal {
+    top: 104.5%;
+  }
+
+  .circle_1_init {
+    position: absolute;
+    top: 91%;
+    left: 84%;
+    height: 20%;
+    width: 10%;
+  }
+
+  .circle_2_init {
+    position: absolute;
+    top: 77%;
+    left: 89%;
+    height: 28%;
+    width: 15%;
+  }
+
+  .circle_3_init {
+    position: absolute;
+    top: 65%;
+    left: 96%;
+    height: 19%;
+    width: 8%;
+  }
+
   p.paragraph--introduction {
     margin: 0 13vw 0 13vw;
   }
@@ -162,6 +277,41 @@ div.square-container {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  div.cover--square--horizontal {
+    top: 105%;
+    width: 30%;
+  }
+
+  div.cover--square--vertical {
+    left: 102.4%;
+    height: 80%;
+    width: 20%;
+  }
+
+  .circle_1_init {
+    position: absolute;
+    top: 92%;
+    left: 84%;
+    height: 20%;
+    width: 12%;
+  }
+
+  .circle_2_init {
+    position: absolute;
+    top: 79%;
+    left: 90%;
+    height: 26%;
+    width: 15%;
+  }
+
+  .circle_3_init {
+    position: absolute;
+    top: 66%;
+    left: 97%;
+    height: 20%;
+    width: 10%;
+  }
+
   p.home--paragraph {
     color: #331e16;
     font-size: 16px;
@@ -180,6 +330,14 @@ div.square-container {
 } */
 
 @media (min-width: 1025px) and (max-width: 1550px) {
+  div.cover--square--vertical {
+    width: 8%;
+    left: 102.5%;
+  }
+
+  div.cover--square--horizontal {
+    top: 103%;
+  }
   p.home--paragraph {
     color: #331e16;
     font-size: 20px;

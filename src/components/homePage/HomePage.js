@@ -66,6 +66,12 @@ export const HomePage = () => {
           </div>
 
           <div className="home--div--square home--last--square">
+            <div className="circle_1_init"></div>
+            <div className="circle_2_init"></div>
+            <div className="circle_3_init"></div>
+
+            <div className="cover--square--horizontal"></div>
+            <div className="cover--square--vertical"></div>
             <p className="home--paragraph">
               My Task Bar jest jak tabliczka czekolady. Każdy ukończony task
               przyniesie Ci słodki smak satysfakcji!
