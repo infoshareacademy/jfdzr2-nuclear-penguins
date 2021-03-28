@@ -175,6 +175,12 @@ div.square-container {
     margin: 0;
   }
 
+  ul.menu.menu-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5%;
+  }
+
   .link-nav {
     margin: 0 11px;
   }

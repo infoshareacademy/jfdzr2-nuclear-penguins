@@ -8,7 +8,7 @@ export const HomePage = () => {
     <div>
       <nav className="navigation">
         <h1 className="logo">My Task Bar</h1>
-        <ul className="menu">
+        <ul className="menu menu-nav">
           <NavLink className="link-nav" to={'/login'}>
             Zaloguj
           </NavLink>
