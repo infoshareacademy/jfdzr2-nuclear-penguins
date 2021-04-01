@@ -1,4 +1,3 @@
-import '../shared.css';
 import {TableChanger} from '../tables/TableChanger';
 import './boards.css';
 

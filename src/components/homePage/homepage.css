@@ -48,6 +48,47 @@ div.cover--square--vertical {
   left: 102%;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #331e16;
+}
+
+body {
+  background-color: #584133;
+  font-family: 'Lato', sans-serif;
+}
+
+h1.logo {
+  padding: 8px;
+  font-family: 'Lobster';
+  transform: rotate(-3deg);
+  font-size: 30px;
+}
+
+.navigation {
+  background-color: #f3edea;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding-right: 30px;
+}
+
+li {
+  display: block;
+  padding: 10px;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
 .welcome {
   height: auto;
   text-align: center;

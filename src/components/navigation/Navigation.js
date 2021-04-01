@@ -1,5 +1,6 @@
 import '../boards/boards.css';
-import '../shared.css';
+import '../navigation/navigation.module.css';
+
 import {NavLink} from 'react-router-dom';
 export const Navigation = () => {
   return (
