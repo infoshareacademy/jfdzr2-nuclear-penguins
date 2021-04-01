@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin: 6px 10px 5px 10px;
+  margin: 2px 10px 5px 10px;
 }
 
 .board {
   display: block;
-  margin: 10px;
+  margin: 8px;
   padding: 5px 20px 5px 20px;
   width: 30%;
   min-height: 68vh;

@@ -1,6 +1,5 @@
 import {TableChanger} from '../tables/TableChanger';
 import './boards.css';
-
 import {Navigation} from '../navigation/Navigation';
 
 export const Boards = () => {
