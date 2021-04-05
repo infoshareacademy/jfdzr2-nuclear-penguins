@@ -7,6 +7,8 @@ import {Task} from '../notes/Notes';
 import {DndProvider} from 'react-dnd';
 import {HTML5Backend} from 'react-dnd-html5-backend';
 import {DropPlace} from '../notes/DropPlace';
+// import {NoteWrapper} from '../notes/NoteWrapper';
+// import {Title} from '../boards/Title'
 
 export const Boards = () => {
   return (
@@ -16,7 +18,10 @@ export const Boards = () => {
       <DndProvider backend={HTML5Backend}>
         <div className="workBoards">
           <div className="toDo board">
-            <h1>To do</h1> <span className="addNote">+</span>
+            <div className="title">
+              <h1>To Do</h1>
+              <span className="addNote">+</span>
+            </div>
             <DropPlace>
               <div>
                 <Task text="czekolada" />

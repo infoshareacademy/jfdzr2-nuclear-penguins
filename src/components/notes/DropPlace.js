@@ -4,15 +4,14 @@ import {useState} from 'react';
 
 function getStyle(backgroundColor) {
   return {
-    border: '1px solid rgba(0,0,0,0.2)',
     color: 'white',
     backgroundColor,
-    padding: '2rem',
-    paddingTop: '1rem',
-    margin: '1rem',
     textAlign: 'center',
     float: 'left',
     fontSize: '1rem',
+    padding: '5px 20px 5px 20px',
+    width: '100%',
+    minHeight: '75vh',
   };
 }
 
@@ -46,7 +45,7 @@ export const DropPlace = ({greedy, children}) => {
     <div ref={drop} style={getStyle(backgroundColor)}>
       {text}
       <br />
-      {hasDropped && <span>dropped {hasDroppedOnChild && ' on child'}</span>}
+      {hasDropped && <span> {hasDroppedOnChild && ' on child'}</span>}
       <div>{children}</div>
     </div>
   );
