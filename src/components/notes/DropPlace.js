@@ -12,6 +12,8 @@ function getStyle(backgroundColor) {
     padding: '5px 20px 5px 20px',
     width: '100%',
     height: '100vh',
+    borderRadius: '6%',
+    margin: '10px',
   };
 }
 
@@ -37,9 +39,9 @@ export const DropPlace = ({greedy, children}) => {
     [greedy, setHasDropped, setHasDroppedOnChild]
   );
   const text = greedy ? 'greedy' : 'not greedy';
-  let backgroundColor = 'rgba(0, 0, 0, .5)';
+  let backgroundColor = 'rgba(0, 0, 0, 0)';
   if (isOverCurrent || (isOver && greedy)) {
-    backgroundColor = 'darkgreen';
+    backgroundColor = 'rgba(0, 0, 0, 0.1)';
   }
   return (
     <div ref={drop} style={getStyle(backgroundColor)}>
