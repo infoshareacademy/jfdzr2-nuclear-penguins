@@ -6,12 +6,12 @@ function getStyle(backgroundColor) {
   return {
     color: 'white',
     backgroundColor,
-    textAlign: 'center',
+    textAlign: 'left',
     float: 'left',
     fontSize: '1rem',
     padding: '5px 20px 5px 20px',
     width: '100%',
-    minHeight: '75vh',
+    height: '100vh',
   };
 }
 
@@ -45,7 +45,7 @@ export const DropPlace = ({greedy, children}) => {
     <div ref={drop} style={getStyle(backgroundColor)}>
       {text}
       <br />
-      {hasDropped && <span> {hasDroppedOnChild && ' on child'}</span>}
+      {hasDropped && <span> dropped {hasDroppedOnChild && ' on child'}</span>}
       <div>{children}</div>
     </div>
   );
