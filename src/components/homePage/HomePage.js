@@ -1,14 +1,12 @@
 import '../homePage/homepage.css';
-import '../shared.css';
-
 import {NavLink} from 'react-router-dom';
 
 export const HomePage = () => {
   return (
     <div>
-      <nav className="navigation">
+      <nav className="navigation_homepage">
         <h1 className="logo">My Task Bar</h1>
-        <ul className="menu">
+        <ul className="menu-nav">
           <NavLink className="link-nav" to={'/login'}>
             Zaloguj
           </NavLink>
@@ -78,8 +76,7 @@ export const HomePage = () => {
             </p>
           </div>
         </div>
-
-        <div className="footer-space"></div>
+        <div className="footer_space--homepage"></div>
       </div>
     </div>
   );

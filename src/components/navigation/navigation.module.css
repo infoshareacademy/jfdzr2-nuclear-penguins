@@ -1,15 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: #331e16;
-}
-
-body {
-  background-color: #584133;
-  font-family: 'Lato', sans-serif;
-}
-
 h1.logo {
   padding: 8px;
   font-family: 'Lobster';
@@ -21,20 +9,17 @@ h1.logo {
   background-color: #f3edea;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  padding-left: 50px;
-  padding-right: 50px;
-  /* width: auto; */
-  /* width: 100vw; */
+  padding: 5px 50px 5px 50px;
 }
 
-.menu {
+ul.menu_navigation {
   display: flex;
+  flex-direction: row;
   list-style-type: none;
   padding-right: 30px;
 }
 
-li {
+li.add {
   display: block;
   padding: 10px;
   justify-content: flex-end;
@@ -43,13 +28,19 @@ li {
 
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
   h1.logo {
-    font-size: 22px;
-    padding-left: 9px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
   }
   .navigation {
-    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
   }
-  .menu {
+  ul.menu.navigation {
     padding-right: 0;
   }
 
@@ -59,13 +50,17 @@ li {
 }
 
 @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  h1.logo {
+    font-size: 25px;
+  }
+
   .navigation {
     display: flex;
     justify-content: space-between;
     padding: 15px;
   }
 
-  .menu {
+  ul.menu_navigation {
     padding-right: 0;
   }
 }
