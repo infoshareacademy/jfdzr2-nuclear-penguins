@@ -48,6 +48,49 @@ div.cover--square--vertical {
   left: 102%;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #331e16;
+}
+
+body {
+  background-color: #584133;
+  font-family: 'Lato', sans-serif;
+}
+
+h1.logo {
+  padding: 8px;
+  font-family: 'Lobster';
+  transform: rotate(-3deg);
+  font-size: 30px;
+}
+
+nav.navigation_homepage {
+  background-color: #f3edea;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+ul.menu-nav {
+  display: flex;
+  list-style-type: none;
+  padding-right: 30px;
+  justify-content: center;
+  margin: 10px;
+}
+
+li {
+  display: block;
+  padding: 10px;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
 .welcome {
   height: auto;
   text-align: center;
@@ -81,9 +124,6 @@ div.introduction {
   margin: 0 29vw 0 29vw;
 }
 
-ul {
-  margin: 10px;
-}
 .link-nav {
   margin: 0 17px;
 }
@@ -124,7 +164,7 @@ div.square-container {
   margin-top: 18px;
 }
 
-.footer-space {
+.footer_space--homepage {
   background-color: #f3edea;
   position: fixed;
   bottom: 0;
@@ -175,6 +215,18 @@ div.square-container {
     margin: 0;
   }
 
+  nav.navigation_homepage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul.menu-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 12px 0 0 0;
+  }
+
   .link-nav {
     margin: 0 11px;
   }
@@ -182,6 +234,10 @@ div.square-container {
   p.home--paragraph {
     color: #331e16;
     font-size: 18px;
+  }
+
+  p.paragraph--introduction {
+    margin: 0 12vw 0 12vw;
   }
   .home--div--square {
     width: 280px;
@@ -205,7 +261,7 @@ div.square-container {
     padding: 10px;
   }
 
-  .footer-space {
+  .footer_space--homepage {
     height: 75px;
   }
 }
@@ -271,7 +327,7 @@ div.square-container {
     transform: rotate(10deg);
   }
 
-  .footer-space {
+  .footer_space--homepage {
     height: 85px;
   }
 }
@@ -342,12 +398,11 @@ div.square-container {
     color: #331e16;
     font-size: 20px;
   }
+  p.paragraph--introduction {
+    margin: 0 23vw 0 23vw;
+  }
 
   .home--div--square {
     width: 250px;
-  }
-
-  p.paragraph--introduction {
-    margin: 0 13vw 0 13vw;
   }
 }

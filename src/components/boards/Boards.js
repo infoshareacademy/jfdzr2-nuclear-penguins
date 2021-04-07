@@ -1,7 +1,5 @@
-import '../shared.css';
 import {TableChanger} from '../tables/TableChanger';
 import './boards.css';
-
 import {Navigation} from '../navigation/Navigation';
 import {Task} from '../notes/Notes';
 import {DndProvider} from 'react-dnd';
