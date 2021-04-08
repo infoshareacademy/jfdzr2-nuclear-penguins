@@ -17,26 +17,27 @@ function getStyle(backgroundColor) {
   };
 }
 
-export const DropPlace = ({children}) => {
-  const [hasDropped, setHasDropped] = useState(false);
-  const [hasDroppedOnChild, setHasDroppedOnChild] = useState(false);
+export const DropPlace = ({children, onDrop}) => {
   const [{isOver, isOverCurrent}, drop] = useDrop(
     () => ({
       accept: ItemTypes.TASK,
+      hover(item, monitor) {
+        console.log(item, monitor.getItem().index);
+      },
       drop(item, monitor) {
+        console.log(monitor.getDropResult());
+        onDrop(item);
         const didDrop = monitor.didDrop();
         if (didDrop) {
           return;
         }
-        setHasDropped(true);
-        setHasDroppedOnChild(didDrop);
       },
       collect: (monitor) => ({
         isOver: monitor.isOver(),
         isOverCurrent: monitor.isOver({shallow: true}),
       }),
     }),
-    [setHasDropped, setHasDroppedOnChild]
+    []
   );
   let backgroundColor = 'rgba(0, 0, 0, 0)';
   if (isOverCurrent || isOver) {
@@ -44,9 +45,7 @@ export const DropPlace = ({children}) => {
   }
   return (
     <div ref={drop} style={getStyle(backgroundColor)}>
-      {ItemTypes.TASK}
       <br />
-      {hasDropped && <span> dropped {hasDroppedOnChild && ' on child'}</span>}
       <div>{children}</div>
     </div>
   );

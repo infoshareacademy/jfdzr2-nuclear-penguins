@@ -5,8 +5,41 @@ import {Task} from '../notes/Notes';
 import {DndProvider} from 'react-dnd';
 import {HTML5Backend} from 'react-dnd-html5-backend';
 import {DropPlace} from '../notes/DropPlace';
+import {useState} from 'react';
 
 export const Boards = () => {
+  const [columns, setColumns] = useState({
+    todo: [
+      {id: 1, text: 'czekolada'},
+      {id: 5, text: 'zupa'},
+      {id: 6, text: 'kasza'},
+    ],
+    inProgress: [{id: 2, text: 'ciastko'}],
+    done: [{id: 3, text: 'hej'}],
+  });
+
+  const updateTask = (toList) => ({task, onList}) => {
+    console.log(task, onList, toList);
+
+    setColumns((old) => {
+      const from = old[onList].filter((item) => item.id !== task.id);
+      const to = old[toList].concat(task);
+
+      if (onList === toList) {
+        return {
+          ...old,
+          [toList]: old[toList]
+            .filter((item) => item.id !== task.id)
+            .concat(task),
+        };
+      }
+      return {
+        ...old,
+        [onList]: from,
+        [toList]: to,
+      };
+    });
+  };
   return (
     <>
       <Navigation />
@@ -18,25 +51,31 @@ export const Boards = () => {
               <h1>To Do</h1>
               <span className="addNote">+</span>
             </div>
-            <DropPlace>
+            <DropPlace onDrop={updateTask('todo')}>
               <div>
-                <Task text="czekolada" />
+                {columns.todo.map((task) => (
+                  <Task key={task.id} task={task} onList="todo" />
+                ))}
               </div>
             </DropPlace>
           </div>
           <div className="inProgress board">
             <h1>In progress</h1>
-            <DropPlace>
+            <DropPlace onDrop={updateTask('inProgress')}>
               <div>
-                <Task text="ciastko" />
+                {columns.inProgress.map((task) => (
+                  <Task key={task.id} task={task} onList="inProgress" />
+                ))}
               </div>
             </DropPlace>
           </div>
           <div className="done board">
             <h1>Done</h1>
-            <DropPlace>
+            <DropPlace onDrop={updateTask('done')}>
               <div>
-                <Task text="hej" />
+                {columns.done.map((task) => (
+                  <Task key={task.id} task={task} onList="done" />
+                ))}
               </div>
             </DropPlace>
           </div>
