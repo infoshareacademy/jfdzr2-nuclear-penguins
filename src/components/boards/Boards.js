@@ -8,6 +8,7 @@ import {DropPlace} from '../notes/DropPlace';
 import {useState} from 'react';
 
 export const Boards = () => {
+  const [taskTitle, setTaskTitle] = useState('');
   const [columns, setColumns] = useState({
     todo: [
       {id: 1, text: 'czekolada'},
@@ -17,6 +18,15 @@ export const Boards = () => {
     inProgress: [{id: 2, text: 'ciastko'}],
     done: [{id: 3, text: 'hej'}],
   });
+
+  const addTask = (toList, title) => {
+    setColumns((old) => {
+      return {
+        ...old,
+        [toList]: [{id: Date.now(), text: title}, ...old[toList]],
+      };
+    });
+  };
 
   const updateTask = (toList) => ({task, onList}) => {
     console.log(task, onList, toList);
@@ -50,6 +60,18 @@ export const Boards = () => {
             <div className="titleOfBoard">
               <h1>To Do</h1>
               <span className="addNote">+</span>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  addTask('todo', taskTitle);
+                  setTaskTitle('');
+                }}
+              >
+                <input
+                  onChange={(e) => setTaskTitle(e.target.value)}
+                  value={taskTitle}
+                />
+              </form>
             </div>
             <DropPlace onDrop={updateTask('todo')}>
               <div>
