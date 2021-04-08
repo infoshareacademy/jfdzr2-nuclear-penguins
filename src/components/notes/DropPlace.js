@@ -17,7 +17,7 @@ function getStyle(backgroundColor) {
   };
 }
 
-export const DropPlace = ({greedy, children}) => {
+export const DropPlace = ({children}) => {
   const [hasDropped, setHasDropped] = useState(false);
   const [hasDroppedOnChild, setHasDroppedOnChild] = useState(false);
   const [{isOver, isOverCurrent}, drop] = useDrop(
@@ -25,7 +25,7 @@ export const DropPlace = ({greedy, children}) => {
       accept: ItemTypes.TASK,
       drop(item, monitor) {
         const didDrop = monitor.didDrop();
-        if (didDrop && !greedy) {
+        if (didDrop) {
           return;
         }
         setHasDropped(true);
@@ -36,16 +36,15 @@ export const DropPlace = ({greedy, children}) => {
         isOverCurrent: monitor.isOver({shallow: true}),
       }),
     }),
-    [greedy, setHasDropped, setHasDroppedOnChild]
+    [setHasDropped, setHasDroppedOnChild]
   );
-  const text = greedy ? 'greedy' : 'not greedy';
   let backgroundColor = 'rgba(0, 0, 0, 0)';
-  if (isOverCurrent || (isOver && greedy)) {
+  if (isOverCurrent || isOver) {
     backgroundColor = 'rgba(0, 0, 0, 0.1)';
   }
   return (
     <div ref={drop} style={getStyle(backgroundColor)}>
-      {text}
+      {ItemTypes.TASK}
       <br />
       {hasDropped && <span> dropped {hasDroppedOnChild && ' on child'}</span>}
       <div>{children}</div>
