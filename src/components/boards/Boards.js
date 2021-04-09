@@ -67,6 +67,7 @@ export const Boards = () => {
                 }}
               >
                 <input
+                  type="text"
                   onChange={(e) => setTaskTitle(e.target.value)}
                   value={taskTitle}
                 />

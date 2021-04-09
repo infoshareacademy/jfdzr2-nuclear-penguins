@@ -20,6 +20,7 @@
 }
 .titleOfBoard {
   font-size: 25px;
+  padding: 0 0 5px 0;
 }
 
 .addNote {
@@ -33,7 +34,11 @@
   text-decoration: none;
 }
 
-input {
+form {
+  margin: 23px 0 0 0;
+  padding: 0;
+}
+input[type='text'] {
   border: 2px solid #d9c2b3;
   border-radius: 3px;
   cursor: pointer;
@@ -43,6 +48,9 @@ input {
   font-size: 1rem;
   background-color: #efefef;
   box-sizing: border-box;
+  outline: none;
+  width: 97%;
+  margin-bottom: 2px;
 }
 
 @media (min-width: 320px) and (max-width: 502px) and (orientation: portrait) {

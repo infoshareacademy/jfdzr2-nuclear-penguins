@@ -3,16 +3,13 @@ import {useDrop} from 'react-dnd';
 
 function getStyle(backgroundColor) {
   return {
-    color: 'white',
     backgroundColor,
     textAlign: 'left',
     float: 'left',
     fontSize: '1rem',
-    padding: '5px 20px 5px 20px',
     width: '100%',
     height: '100vh',
     borderRadius: '3px',
-    margin: '10px',
   };
 }
 
