@@ -9,7 +9,7 @@ h1.logo {
   background-color: #f3edea;
   display: flex;
   justify-content: space-between;
-  padding: 5px 50px 5px 50px;
+  padding: 15px 50px 15px 50px;
 }
 
 ul.menu_navigation {

@@ -1,6 +1,5 @@
 import {ItemTypes} from './Constants';
 import {useDrop} from 'react-dnd';
-import {useState} from 'react';
 
 function getStyle(backgroundColor) {
   return {
@@ -12,7 +11,7 @@ function getStyle(backgroundColor) {
     padding: '5px 20px 5px 20px',
     width: '100%',
     height: '100vh',
-    borderRadius: '6%',
+    borderRadius: '3px',
     margin: '10px',
   };
 }
@@ -41,7 +40,7 @@ export const DropPlace = ({children, onDrop}) => {
   );
   let backgroundColor = 'rgba(0, 0, 0, 0)';
   if (isOverCurrent || isOver) {
-    backgroundColor = 'rgba(0, 0, 0, 0.1)';
+    backgroundColor = 'rgb(254, 213, 195';
   }
   return (
     <div ref={drop} style={getStyle(backgroundColor)}>

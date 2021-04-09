@@ -11,12 +11,12 @@ export const Boards = () => {
   const [taskTitle, setTaskTitle] = useState('');
   const [columns, setColumns] = useState({
     todo: [
-      {id: 1, text: 'czekolada'},
-      {id: 5, text: 'zupa'},
-      {id: 6, text: 'kasza'},
+      {id: 1, text: 'ukończyć kurs w ISA'},
+      {id: 5, text: 'napisać test końcowy w ISA'},
+      {id: 6, text: 'podziękować prowadzącym ISA za współpracę'},
     ],
-    inProgress: [{id: 2, text: 'ciastko'}],
-    done: [{id: 3, text: 'hej'}],
+    inProgress: [{id: 2, text: 'odpocząć'}],
+    done: [{id: 3, text: 'podziękować kursantom ISA'}],
   });
 
   const addTask = (toList, title) => {
@@ -57,9 +57,8 @@ export const Boards = () => {
       <DndProvider backend={HTML5Backend}>
         <div className="workBoards">
           <div className="toDo board">
-            <div className="titleOfBoard">
-              <h1>To Do</h1>
-              <span className="addNote">+</span>
+            <div>
+              <h1 className="titleOfBoard">To do</h1>
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -82,7 +81,7 @@ export const Boards = () => {
             </DropPlace>
           </div>
           <div className="inProgress board">
-            <h1>In progress</h1>
+            <h1 className="titleOfBoard">In progress</h1>
             <DropPlace onDrop={updateTask('inProgress')}>
               <div>
                 {columns.inProgress.map((task) => (
@@ -92,7 +91,7 @@ export const Boards = () => {
             </DropPlace>
           </div>
           <div className="done board">
-            <h1>Done</h1>
+            <h1 className="titleOfBoard">Done</h1>
             <DropPlace onDrop={updateTask('done')}>
               <div>
                 {columns.done.map((task) => (

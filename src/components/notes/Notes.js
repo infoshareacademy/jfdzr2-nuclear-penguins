@@ -13,7 +13,16 @@ export function Task({isDragging, task, onList}) {
     []
   );
   return (
-    <div ref={dragRef} style={{opacity, border: '1px solid red'}}>
+    <div
+      ref={dragRef}
+      style={{
+        opacity,
+        border: '2px solid #d9c2b3',
+        borderRadius: '3px',
+        margin: '5px',
+        padding: '5px 15px',
+      }}
+    >
       {task.text}
     </div>
   );
