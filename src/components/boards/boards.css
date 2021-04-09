@@ -19,8 +19,9 @@
   background-color: #f3edea;
 }
 .titleOfBoard {
-  font-size: 25px;
+  font-size: 30px;
   padding: 0 0 5px 0;
+  font-family: 'Lobster';
 }
 
 .addNote {
