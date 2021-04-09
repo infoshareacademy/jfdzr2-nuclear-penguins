@@ -7,40 +7,52 @@
 
 .board {
   display: block;
-  margin: 8px;
+  margin: 10px;
   padding: 5px 20px 5px 20px;
   width: 30%;
   min-height: 68vh;
-  text-align: left;
-  font-style: italic;
+  text-align: center;
+  /* font-style: italic; */
   font-weight: bold;
-  border: 2px double #331e16;
+  border: 5px solid #d9c2b3;
+  border-radius: 3px;
+  background-color: #f3edea;
+}
+.titleOfBoard {
+  font-size: 30px;
+  padding: 0 0 5px 0;
+  font-family: 'Lobster';
 }
 
-.toDo {
-  background-color: #f7d6ab;
-  display: flex;
-  justify-content: space-between;
+.addNote {
+  margin: 5px;
+  padding: 0px 20px;
 }
 
-.inProgress {
-  background-color: #bb9777;
-}
-
-.done {
-  background-color: #80604c;
-}
 .tableAddingBtn {
   width: 20px;
   height: 20px;
   text-decoration: none;
 }
 
-/* .color1 {color: #331E16;}
-.color2 {color: #533C2E;}
-.color3 {color: #80604C;}
-.color4 {color: #BB9777;}
-.color5 {color: #F7D6AB;} */
+form {
+  margin: 23px 0 0 0;
+  padding: 0;
+}
+input[type='text'] {
+  border: 2px solid #d9c2b3;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #331e16;
+  padding: 5px;
+  font-size: 1rem;
+  background-color: #efefef;
+  box-sizing: border-box;
+  outline: none;
+  width: 97%;
+  margin-bottom: 2px;
+}
 
 @media (min-width: 320px) and (max-width: 502px) and (orientation: portrait) {
   nav.navigation {
