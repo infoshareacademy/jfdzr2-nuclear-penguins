@@ -8,7 +8,7 @@ function getStyle(backgroundColor) {
     float: 'left',
     fontSize: '1rem',
     width: '100%',
-    height: '100vh',
+    height: '70vh',
     borderRadius: '3px',
   };
 }

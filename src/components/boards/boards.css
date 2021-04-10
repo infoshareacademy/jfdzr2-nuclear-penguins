@@ -11,8 +11,8 @@
   padding: 5px 20px 5px 20px;
   width: 30%;
   min-height: 68vh;
+  max-height: 69vh;
   text-align: center;
-  /* font-style: italic; */
   font-weight: bold;
   border: 5px solid #d9c2b3;
   border-radius: 3px;
@@ -64,7 +64,7 @@ input[type='text'] {
 
   .workBoards {
     display: flex;
-    margin-left: 4%;
+    margin-left: 5%;
   }
   h1.logo {
     display: flex;
@@ -98,10 +98,18 @@ input[type='text'] {
   .board {
     width: 91%;
     min-height: 20vh;
+    max-height: 80vh;
   }
 }
 
 @media (min-width: 503px) and (max-width: 1024px) {
+  div.toDo.board,
+  div.inProgress.board,
+  div.done.board {
+    display: flex;
+    flex-direction: column;
+  }
+
   nav.navigation {
     display: flex;
     flex-direction: row;
@@ -122,13 +130,14 @@ input[type='text'] {
   div.workBoards {
     display: flex;
     align-items: center;
-    margin: 20px 10px 5px 10px;
+    /* margin: 20px 10px 5px 10px; */
   }
   .board {
     display: flex;
     padding: 5px 20px 5px 20px;
     width: 87%;
     min-height: 66vh;
+    max-height: 66vh;
   }
 }
 
