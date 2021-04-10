@@ -7,11 +7,11 @@
 
 .board {
   display: block;
-  margin: 10px;
+  margin: 11px;
   padding: 5px 20px 5px 20px;
   width: 30%;
   min-height: 68vh;
-  max-height: 69vh;
+  max-height: 76vh;
   text-align: center;
   font-weight: bold;
   border: 5px solid #d9c2b3;

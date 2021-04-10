@@ -73,9 +73,9 @@ span.authors {
   .footer_space--homepage {
     height: 7.5%;
   }
-  .footer_space--nav {
+  /* .footer_space--nav {
     height: 66px;
-  }
+  } */
 }
 
 /* @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
