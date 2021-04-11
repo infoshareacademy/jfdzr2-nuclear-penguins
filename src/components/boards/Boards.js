@@ -5,19 +5,46 @@ import {Task} from '../notes/Notes';
 import {DndProvider} from 'react-dnd';
 import {HTML5Backend} from 'react-dnd-html5-backend';
 import {DropPlace} from '../notes/DropPlace';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 export const Boards = () => {
+  if (!localStorage.getItem('tasks')) {
+    localStorage.setItem(
+      'tasks',
+      JSON.stringify({
+        todo: [
+          {id: 1, text: 'odpocząć'},
+          {id: 5, text: 'podziękować kursantom ISA'},
+          {id: 6, text: 'podziękować prowadzącym ISA za współpracę'},
+        ],
+        inProgress: [{id: 2, text: 'ukończyć kurs w ISA'}],
+        done: [{id: 3, text: 'napisać test końcowy w ISA'}],
+      })
+    );
+  }
+
   const [taskTitle, setTaskTitle] = useState('');
+
+  // const [columns, setColumns] = useState({
+  //   todo: [
+  //     {id: 1, text: 'ukończyć kurs w ISA'},
+  //     {id: 5, text: 'napisać test końcowy w ISA'},
+  //     {id: 6, text: 'podziękować prowadzącym ISA za współpracę'},
+  //   ],
+  //   inProgress: [{id: 2, text: 'odpocząć'}],
+  //   done: [{id: 3, text: 'podziękować kursantom ISA'}],
+  // });
+  // Napisałem to ponownie tym razem pobiera dane z local storage:
+
   const [columns, setColumns] = useState({
-    todo: [
-      {id: 1, text: 'ukończyć kurs w ISA'},
-      {id: 5, text: 'napisać test końcowy w ISA'},
-      {id: 6, text: 'podziękować prowadzącym ISA za współpracę'},
-    ],
-    inProgress: [{id: 2, text: 'odpocząć'}],
-    done: [{id: 3, text: 'podziękować kursantom ISA'}],
+    todo: JSON.parse(localStorage.getItem('tasks')).todo,
+    inProgress: JSON.parse(localStorage.getItem('tasks')).inProgress,
+    done: JSON.parse(localStorage.getItem('tasks')).done,
   });
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(columns));
+  }, [columns]);
 
   const addTask = (toList, title) => {
     setColumns((old) => {
@@ -73,6 +100,7 @@ export const Boards = () => {
                 />
               </form>
             </div>
+
             <DropPlace onDrop={updateTask('todo')}>
               <div>
                 {columns.todo.map((task) => (
