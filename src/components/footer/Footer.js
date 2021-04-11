@@ -1,8 +1,6 @@
 import './Footer.css';
 import iconEmail from '../../assets/iconEmail.png';
 
-import {useRouteMatch} from 'react-router-dom';
-
 export const Footer = () => {
   return (
     <>
