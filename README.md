@@ -1,5 +1,7 @@
 <img width="250px" alt="Logo" src="./src/assets/readmePhotos/logo.jpg" />
 
+[My Task Bar](public/index.html)
+
 - Help with the organization of time and daily tasks
 - Multitasking - use boards for home stuff or work tasks
 - Easy application design
