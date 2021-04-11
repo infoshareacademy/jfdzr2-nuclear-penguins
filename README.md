@@ -14,7 +14,7 @@
 - Enjoy the list of completed tasks
 
 HOME PAGE VIEW:
-<img width="100%" alt="HomePage" src="./src/assets/readmePhotos/HomePage.jpg" />
+<img width="100%" alt="HomePage" src="./src/assets/readmePhotos/homePage.jpg" />
 
 LOG IN/REGISTER VIEW:
 <img width="100%" alt="Login" src="./src/assets/readmePhotos/login.jpg" />
