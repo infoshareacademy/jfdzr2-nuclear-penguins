@@ -2,7 +2,7 @@ import React from 'react';
 import {Login} from './components/service/Login';
 
 import {HomePage} from './components/homePage/HomePage';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import Signup from './components/service/Signup';
 import Boards from './components/boards/Boards';
 import Footer from './components/footer/Footer';
