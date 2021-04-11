@@ -20,8 +20,13 @@ function App() {
           <Route exact path="/bartable/tableAdder" component={TableAdder} />
           <Route exact path="/footer" component={Footer} />
         </Switch>
+        <Switch>
+          <Route path="/bartable"></Route>
+          <Route>
+            <Footer />
+          </Route>
+        </Switch>
       </Router>
-      <Footer />
     </>
   );
 }
